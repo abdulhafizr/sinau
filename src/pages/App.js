@@ -1,7 +1,9 @@
+import {Button} from 'reactstrap'
+
 function App() {
   return (
     <div className="App">
-      mantap
+      <Button color="danger">Danger</Button>
     </div>
   );
 }
