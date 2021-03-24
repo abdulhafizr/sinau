@@ -1,0 +1,102 @@
+:root {
+    /* Fonts Variables */
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+
+    /* Colors Variables */
+    --primary: #5784BA;
+    --secondary: #FFFFFF;
+    --user-info: #F9F9F9;
+    --font-active: #2F2F2F;
+    --font-deactive: #FFFFFF;
+    --logout: #FF1313;
+}
+
+.sidebar__wrapper {
+    height: 976px;
+    border-radius: 20px;
+    background-color: var(--primary);
+}
+
+.sidebar__icon-notif {
+    position: absolute;
+    top: 34.47px;
+    right: 28.09px;
+}
+
+.sidebar__user-info {
+    padding: 87px 32px 74px;
+}
+
+.sidebar__user-info img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+
+.user-name {
+    margin: 26.62px 0 0;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--user-info);
+}
+.user-status {
+    margin: 2px 0 0;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--user-info);
+}
+
+.sidebar__main-item {
+    padding: 0 32px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+}
+.sidebar__main-item img {
+    margin-right: 31.75px;
+}
+
+.sidebar__main-item p {
+    margin: 0;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--font-deactive);
+}
+.sidebar__main-item .logout {
+    color: var(--logout);
+}
+
+/* Active */
+.sidebar__main-item.active {
+    position: relative;
+    background: var(--secondary);
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 20px;
+}
+.sidebar__main-item.active p {
+    color: var(--font-active);
+}
+.sidebar__main-item.active::after {
+    display: table;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px 20px 0 0;
+    background: var(--primary);
+    bottom: -1px;
+    left: 0;
+}

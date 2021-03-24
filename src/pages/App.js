@@ -1,11 +1,7 @@
-import {Button} from 'reactstrap'
+import Content from './Content'
 
 function App() {
-  return (
-    <div className="App">
-      <Button color="danger">Danger</Button>
-    </div>
-  );
+  return <Content />;
 }
 
 export default App;
