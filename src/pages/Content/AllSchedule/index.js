@@ -1,5 +1,5 @@
 import {Row, Col} from 'reactstrap'
-import {Calendar, Schedule, Gap, News} from '../../../components'
+import {Calendar, Schedule, Gap, Messages, News} from '../../../components'
 import './index.css'
 
 function AllSchedule() {
@@ -16,7 +16,7 @@ function AllSchedule() {
                     </div>
                 </Col>
                 <Col className="all-schedule__message">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi expedita alias amet? Cum sequi, recusandae maiores nisi quidem non ab, quasi nihil consequuntur alias velit similique suscipit, omnis corporis quis.
+                    <Messages />
                 </Col>
             </Row>
         </div>
