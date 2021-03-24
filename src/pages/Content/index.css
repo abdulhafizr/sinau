@@ -9,7 +9,7 @@
 
 .content {
     width: 100%;
-    height: 1024px;
+    min-height: 1024px;
     background-color: var(--primary-background);
     padding: 24px;
 }
