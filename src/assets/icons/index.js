@@ -25,6 +25,7 @@ import ICPushNotification from './push-notification.svg'
 import ICRightArrow from './right-arrow.svg'
 import ICSearch from './search-icon.svg'
 import ICSearchMessage from './search-message.svg'
+import ICCalendar from './calendar.svg'
 
 
 export {
@@ -51,5 +52,6 @@ export {
     ICPushNotification,
     ICRightArrow,
     ICSearch,
-    ICSearchMessage
+    ICSearchMessage,
+    ICCalendar
 }

@@ -1,4 +1,6 @@
+import Calendar from './Calendar'
 import Sidebar from './Sidebar'
 import News from './News'
+import Schedule from './Schedule'
 
-export {Sidebar, News}
+export {Calendar, Sidebar, News, Schedule}

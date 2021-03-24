@@ -1,0 +1,15 @@
+.calendar__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    margin-bottom: 21px;
+}
+
+.calendar__title {
+    font-family: Montserrat, 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.66px;
+    line-height: 29px;
+    color: #000000;
+}
