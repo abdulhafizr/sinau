@@ -11,6 +11,7 @@ function AllSchedule() {
                     <Gap height={33} />
                     <div className="schedule__wrapper">
                         <Calendar />
+                        <Gap height={21} />
                         <Schedule />
                     </div>
                 </Col>

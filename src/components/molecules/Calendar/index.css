@@ -13,3 +13,38 @@
     line-height: 29px;
     color: #000000;
 }
+.calendar__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.calendar__body h1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    color: #989898;
+}
+.calendar__body p {
+    margin-top: 7px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    color: #000000;
+}
+.calendar__item.active {
+    padding: 5px 8px;
+    border-radius: 15px;
+    background: #5784BA;
+}
+.calendar__item.active h1, .calendar__item.active p {
+    color: #FFF;
+}
