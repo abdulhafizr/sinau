@@ -1,5 +1,6 @@
 import {Row, Col} from 'reactstrap'
 import {Sidebar} from '../../components'
+import AllSchedule from './AllSchedule'
 import './index.css'
 
 function Content() {
@@ -9,10 +10,10 @@ function Content() {
             <Sidebar />
         </Col>
         <Col className="main">
-            main
+            <AllSchedule />
         </Col>
     </Row>
   );
 }
 
-export default Content;
+export default Content

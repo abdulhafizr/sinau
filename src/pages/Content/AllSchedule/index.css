@@ -1,0 +1,10 @@
+.all-schedule {
+    margin-left: 32px;
+}
+
+.all-schedule__main {
+    margin-right: 32px;
+}
+.all-schedule__message {
+    max-width: 484px;
+}

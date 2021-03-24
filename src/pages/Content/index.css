@@ -2,11 +2,15 @@
     --primary-background: #E6EDF6;
 }
 
+.row, .col, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
 .content {
     width: 100%;
-    height: 100vh;
+    height: 1024px;
     background-color: var(--primary-background);
-    margin: 0;
     padding: 24px;
 }
 
