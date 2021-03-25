@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {Row, Col} from 'reactstrap'
 import {Sidebar} from '../../components'
 import AllSchedule from './AllSchedule'
+import Activity from './Activity'
 import './index.css'
 
 function Content() {
@@ -17,7 +18,7 @@ function Content() {
                   <AllSchedule />
                 </Route>
                 <Route path="/activity">
-                  Activity
+                  <Activity />
                 </Route>
                 <Route path="/help">
                   Help
