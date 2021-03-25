@@ -37,3 +37,56 @@
 .messages__search input:focus {
     outline: none;
 }
+
+.messages__body {
+    margin-top: 32.12px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18.93px;
+}
+.message:last-child {
+    margin-bottom: 0;
+}
+.message img {
+    margin-right: 40.05px;
+    width: 75.38px;
+    height: 75.38px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.message__info {
+    position: relative;
+    flex: 1;
+}
+.message__name {
+    padding-right: 60px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21.2012px;
+    line-height: 32px;
+    color: #000000;
+}
+.message__history {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.1341px;
+    line-height: 21px;
+    color: #787878;
+}
+.message__timestamp {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.1341px;
+    line-height: 21px;
+    color: #787878;
+    position: absolute;
+    margin-top: 8px;
+    top: 0;
+    right: 0;
+}
