@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 23.67px;
 }
 .messages__header h1 {
     font-family: Montserrat;
@@ -18,30 +19,9 @@
     color: #000000;
 }
 
-.messages__search {
-    margin-top: 23.67px;
-    background-color: #E6EDF6;
-    height: 47.88px;
-    border-radius: 17.95px;
-    display: flex;
-    align-items: center;
-    padding: 0 18.13px;
-}
-.messages__search input{
-    margin-left: 12.33px;
-    border: none;
-    background-color: transparent;
-    height: 100%;    
-    flex: 1;
-}
-.messages__search input:focus {
-    outline: none;
-}
-
 .messages__body {
     margin-top: 32.12px;
 }
-
 .message {
     display: flex;
     align-items: center;

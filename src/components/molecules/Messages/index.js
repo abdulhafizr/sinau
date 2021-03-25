@@ -1,4 +1,5 @@
-import {ICAddMessage, ICSearchMessage, DMUser1} from '../../../assets'
+import {ICAddMessage, DMUser1} from '../../../assets'
+import {SearchMessage} from '../../../components'
 import './index.css'
 
 function Messages() {
@@ -8,10 +9,9 @@ function Messages() {
                 <h1>Messages</h1>
                 <img src={ICAddMessage} alt="Add Message"/>
             </div>
-            <div className="messages__search">
-                <img src={ICSearchMessage} alt="Search"/>
-                <input type="text" placeholder="Search"/>
-            </div>
+
+            <SearchMessage />
+            
             <div className="messages__body">
                 <div className="message">
                     <img src={DMUser1} alt="Profile" className="message__profile"/>
