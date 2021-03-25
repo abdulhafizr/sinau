@@ -1,4 +1,38 @@
-.table__progress {
-    display: flex;
-    align-items: center;
+.table__new-class table {
+    width: 100%;
+}
+
+.table__new-class table th,
+.table__new-class table td {
+    padding: 18px 24px;
+}
+
+.table__new-class table th {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.table__new-class table td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.btn-register {
+    padding: 6px 16px;
+    background: #57BA61;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FEFEFE;
 }

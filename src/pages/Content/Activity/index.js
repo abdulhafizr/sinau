@@ -1,4 +1,4 @@
-import {SearchNewClass, TableClassProgress, TopNavigation} from '../../../components'
+import {SearchNewClass, TableClassProgress, TableNewClass, TopNavigation, Gap} from '../../../components'
 import {ICRightArrow} from '../../../assets'
 import './index.css'
 
@@ -43,6 +43,10 @@ function Activity() {
             <div className="new__class">
                 <h1 className="new__class-label">New class</h1>
                 <SearchNewClass />
+                
+                <Gap height={32} />
+                
+                <TableNewClass />
             </div>
         </div>
     )
