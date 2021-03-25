@@ -58,7 +58,7 @@
 
 .sidebar__main-item {
     padding: 0 32px;
-    height: 98px;
+    height: 78px;
     display: flex;
     align-items: center;
 }
@@ -68,7 +68,6 @@
 .sidebar__main-item img {
     margin-right: 31.75px;
 }
-
 .sidebar__main-item p {
     margin: 0;
     font-family: var(--primary-font);
@@ -84,9 +83,11 @@
 
 /* Active */
 .sidebar__main-item.active {
+    height: 98px;
     position: relative;
     background: var(--secondary);
     border-radius: 20px 20px 0 0;
+    margin-bottom: -20px;
     padding-bottom: 20px;
 }
 .sidebar__main-item.active p {
@@ -100,6 +101,6 @@
     height: 20px;
     border-radius: 20px 20px 0 0;
     background: var(--primary);
-    bottom: -1px;
+    bottom: 0;
     left: 0;
 }
