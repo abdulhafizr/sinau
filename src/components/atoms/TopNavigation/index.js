@@ -1,10 +1,14 @@
 import {ICBackArrow} from '../../../assets'
 import './index.css'
 
-function TopNavigation({label}) {
+function TopNavigation({label, type}) {
     return (
         <div className="top__navigation">
-            <img src={ICBackArrow} alt="Back"/>
+            {
+                type !== "text-only" && (
+                    <img src={ICBackArrow} alt="Back"/>
+                )
+            }
             <p className="navigation">{label}</p>
         </div>
     )

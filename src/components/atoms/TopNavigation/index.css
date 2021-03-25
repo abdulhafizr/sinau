@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
 }
-
+.top__navigation img {
+    margin-right: 22.26px;
+}
 .top__navigation p {
-    margin-left: 22.26px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
