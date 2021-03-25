@@ -62,6 +62,9 @@
     display: flex;
     align-items: center;
 }
+.sidebar__main-item:hover {
+    text-decoration: none;
+}
 .sidebar__main-item img {
     margin-right: 31.75px;
 }

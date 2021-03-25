@@ -1,8 +1,12 @@
+import {Link, useLocation} from 'react-router-dom'
 import {
     ICNotificationActive,
-    ICActivityActive,
     ICDashboard,
+    ICDashboardActive,
+    ICActivity,
+    ICActivityActive,
     ICHelp,
+    ICHelpActive,
     ICLogout,
     DMUser1
 } from '../../../assets'
@@ -10,6 +14,7 @@ import {
 import './index.css'
 
 function Sidebar() {
+    const currentRoute = useLocation();
     return (
         <div className="sidebar__wrapper">
             {/* Icon Notification */}
@@ -24,22 +29,37 @@ function Sidebar() {
 
             {/* Sidebar Main */}
             <div className="sidebar__main">
-                <div className="sidebar__main-item">
-                    <img src={ICDashboard} alt="dashboard icon"/>
+                <Link 
+                    to="/" 
+                    className={`sidebar__main-item ${currentRoute.pathname === '/' && 'active'}`}
+                >
+                    <img src={currentRoute.pathname === '/' ? ICDashboardActive : ICDashboard} alt="dashboard icon"/>
                     <p>Dashboard</p>
-                </div>
-                <div className="sidebar__main-item active">
-                    <img src={ICActivityActive} alt="activity icon"/>
+                </Link>
+                
+                <Link 
+                    to="/activity" 
+                    className={`sidebar__main-item ${currentRoute.pathname === '/activity' && 'active'}`}
+                >
+                    <img src={currentRoute.pathname === '/activity' ? ICActivityActive : ICActivity} alt="activity icon"/>
                     <p>Activity</p>
-                </div>
-                <div className="sidebar__main-item">
-                    <img src={ICHelp} alt="help icon"/>
+                </Link>
+                
+                <Link 
+                    to="/help" 
+                    className={`sidebar__main-item ${currentRoute.pathname === '/help' && 'active'}`}
+                >
+                    <img src={currentRoute.pathname === '/help'? ICHelpActive : ICHelp} alt="help icon"/>
                     <p>Help</p>
-                </div>
-                <div className="sidebar__main-item">
+                </Link>
+                
+                <Link 
+                    to="/logout" 
+                    className="sidebar__main-item"
+                >
                     <img src={ICLogout} alt="logout icon"/>
                     <p className="logout">Logout</p>
-                </div>
+                </Link>
             </div>
         </div>
     )
