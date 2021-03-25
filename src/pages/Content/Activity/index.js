@@ -1,4 +1,4 @@
-import {TableClassProgress, TopNavigation} from '../../../components'
+import {SearchNewClass, TableClassProgress, TopNavigation} from '../../../components'
 import {ICRightArrow} from '../../../assets'
 import './index.css'
 
@@ -7,6 +7,7 @@ function Activity() {
         <div className="activity">
             <TopNavigation label="Activity" type="text-only" />
             <h1 className="activity__label">My class</h1>
+            
             <div className="my__class">
                 <TableClassProgress 
                     type="header"
@@ -37,6 +38,11 @@ function Activity() {
                     <p>view all</p>
                     <img src={ICRightArrow} alt=">"/>
                 </div>
+            </div>
+            
+            <div className="new__class">
+                <h1 className="new__class-label">New class</h1>
+                <SearchNewClass />
             </div>
         </div>
     )
