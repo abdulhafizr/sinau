@@ -1,34 +1,44 @@
 import {SearchNewClass, TableClassProgress, TableNewClass, TopNavigation, Gap, Pagination} from '../../../components'
-import {Link, useRouteMatch, Switch, Route} from 'react-router-dom'
+import {Link, useHistory, useRouteMatch, Switch, Route} from 'react-router-dom'
 import MyClass from '../MyClass'
 import ClassDetail from '../ClassDetail'
+import ClassProgress from '../ClassProgress'
 import {ICRightArrow} from '../../../assets'
 import './index.css'
 
 function Activity() {
 
-    const match = useRouteMatch()
+    const route = useHistory()
+    const currentRoute = useRouteMatch()
 
     return (
         <Switch>
             
-            <Route path={`${match.url}/myclass`}>
+            <Route path={`${currentRoute.url}/my-class`}>
                 <MyClass />
             </Route>
             
-            <Route path={`${match.url}/class-detail`}>
+            <Route path={`${currentRoute.url}/class-detail`}>
                 <ClassDetail />
             </Route>
+            
+            <Route path={`${currentRoute.url}/class-progress`}>
+                <ClassProgress />
+            </Route>
 
-            <Route path={`${match.url}`}>
+            <Route path={`${currentRoute.url}`}>
 
                 <div className="activity">
                     <TopNavigation label="Activity" type="text-only" />
                     <h1 className="activity__label">My class</h1>
                     
                     <div className="my_class">
-                        <TableClassProgress />
-                        <Link to={`${match.url}/myclass`} className="my_class--view-all">
+
+                        <TableClassProgress 
+                            onClick={() => route.push(`${currentRoute.url}/my-class/class-progress`)}
+                        />
+
+                        <Link to={`${currentRoute.url}/my-class`} className="my_class--view-all">
                             <p>view all</p>
                             <img src={ICRightArrow} alt=">"/>
                         </Link>

@@ -70,6 +70,9 @@ input[name="table__class-progress-checked-body"] {
     color: #51E72B;
     text-align: center;
 }
+.table__class-progress table td img {
+    cursor: pointer;
+}
 .btn-ongoing {
     padding: 4px 8px;
     background: #D2DEED;

@@ -1,7 +1,7 @@
 import {DMProgressBar, ICList} from '../../../assets'
 import './index.css'
 
-function TableClassProgress({body}) {
+function TableClassProgress({onClick}) {
     return (
         <div className="table__class-progress">
             <table>
@@ -30,7 +30,11 @@ function TableClassProgress({body}) {
                                 <td>Software</td>
                                 <td>Learn the fundamentals of front end...</td>
                                 <td>
-                                    <img src={DMProgressBar} alt="progress"/>
+                                    <img 
+                                        src={DMProgressBar} 
+                                        onClick={onClick}
+                                        alt="progress"
+                                    />
                                 </td>
                                 <td>
                                     <span className="btn-ongoing">Ongoing</span>
