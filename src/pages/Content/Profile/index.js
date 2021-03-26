@@ -1,9 +1,10 @@
-import React from 'react'
+import {HeaderProfile} from '../../../components'
+import './index.css'
 
 function Profile() {
     return (
-        <div>
-            Profile
+        <div className="profile">
+            <HeaderProfile />
         </div>
     )
 }
