@@ -39,9 +39,9 @@ function Sidebar() {
                 
                 <Link 
                     to="/activity" 
-                    className={`sidebar__main-item ${currentRoute.pathname === '/activity' && 'active'}`}
+                    className={`sidebar__main-item ${currentRoute.pathname.includes('/activity') && 'active'}`}
                 >
-                    <img src={currentRoute.pathname === '/activity' ? ICActivityActive : ICActivity} alt="activity icon"/>
+                    <img src={currentRoute.pathname.includes('/activity') ? ICActivityActive : ICActivity} alt="activity icon"/>
                     <p>Activity</p>
                 </Link>
                 

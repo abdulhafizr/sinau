@@ -20,9 +20,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.my__class--view-all p {
-    margin-right: 10.61px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -31,6 +28,7 @@
     color: #000000;
 }
 .my__class--view-all img {
+    margin-left: 10.61px;
     width: 4.48px;
     height: 7.82px;
 }
