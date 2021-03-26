@@ -4,5 +4,6 @@ import TableClassProgress from './TableClassProgress'
 import TableNewClass from './TableNewClass'
 import SearchMessage from './SearchMessage'
 import SearchNewClass from './SearchNewClass'
+import Pagination from './Pagination'
 
-export {Gap, TableClassProgress, TableNewClass, TopNavigation, SearchMessage, SearchNewClass}
+export {Gap, TableClassProgress, TableNewClass, TopNavigation, SearchMessage, SearchNewClass, Pagination}
