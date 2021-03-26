@@ -1,7 +1,11 @@
+import {useHistory} from 'react-router-dom'
 import {ICList} from '../../../assets'
 import './index.css'
 
-function TableNewClass({type}) {
+function TableNewClass() {
+
+    const route = useHistory()
+    
     return (
         <div className="table__new-class">
             <table>
@@ -15,33 +19,10 @@ function TableNewClass({type}) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="shadow-sm">
-                        <td>Know more Javascript</td>
-                        <td>Software</td>
-                        <td>Javascript from the basic for...</td>
-                        <td>Beginner</td>
-                        <td>Free</td>
-                        <td>
-                            <span className="btn-register">Register</span>
-                        </td>
-                        <td>
-                            <img src={ICList} alt="list"/>
-                        </td>
-                    </tr>
-                    <tr className="shadow-sm">
-                        <td>Know more Javascript</td>
-                        <td>Software</td>
-                        <td>Javascript from the basic for...</td>
-                        <td>Beginner</td>
-                        <td>Free</td>
-                        <td>
-                            <span className="btn-register">Register</span>
-                        </td>
-                        <td>
-                            <img src={ICList} alt="list"/>
-                        </td>
-                    </tr>
-                    <tr className="shadow-sm">
+                    <tr 
+                        className="shadow-sm"
+                        onClick={() => route.push('/activity/class-detail')}
+                    >
                         <td>Know more Javascript</td>
                         <td>Software</td>
                         <td>Javascript from the basic for...</td>

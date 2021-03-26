@@ -5,6 +5,7 @@ import DMNews1 from './news1.png'
 import DMNews2 from './news2.jpeg'
 import DMNews3 from './news3.jpeg'
 import DMProgressBar from './progress-bar.svg'
+import DMClassDetail from './software-icon.svg'
 
 export {
     DMUser1,
@@ -13,5 +14,6 @@ export {
     DMNews1,
     DMNews2,
     DMNews3,
-    DMProgressBar
+    DMProgressBar,
+    DMClassDetail
 }

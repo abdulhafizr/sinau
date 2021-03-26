@@ -1,6 +1,7 @@
 import {SearchNewClass, TableClassProgress, TableNewClass, TopNavigation, Gap, Pagination} from '../../../components'
 import {Link, useRouteMatch, Switch, Route} from 'react-router-dom'
 import MyClass from '../MyClass'
+import ClassDetail from '../ClassDetail'
 import {ICRightArrow} from '../../../assets'
 import './index.css'
 
@@ -10,8 +11,13 @@ function Activity() {
 
     return (
         <Switch>
+            
             <Route path={`${match.url}/myclass`}>
                 <MyClass />
+            </Route>
+            
+            <Route path={`${match.url}/class-detail`}>
+                <ClassDetail />
             </Route>
 
             <Route path={`${match.url}`}>

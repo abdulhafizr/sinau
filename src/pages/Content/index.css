@@ -1,5 +1,5 @@
-:root {
-    --primary-background: #E6EDF6;
+html {
+    scroll-behavior: smooth;
 }
 
 .row, .col, h1, p {
@@ -10,7 +10,7 @@
 .content {
     width: 100%;
     min-height: 1024px;
-    background-color: var(--primary-background);
+    background-color: #E6EDF6;
     padding: 24px;
 }
 
