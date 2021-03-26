@@ -1,0 +1,16 @@
+.my__class {
+    padding: 16px 16px 16px 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.my__class-header {
+    margin-top: 39.24px;
+    display: flex;
+}
+select[name="sortby"] {
+    margin-left: 95px;   
+}
+.my__class .table__class-progress {
+    flex: 1;
+}

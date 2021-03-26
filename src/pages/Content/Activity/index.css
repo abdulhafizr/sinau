@@ -14,7 +14,7 @@
     padding-left: 24px;
 }
 
-.my__class--view-all {
+.my_class--view-all {
     margin-top: 16px;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
     line-height: 15px;
     color: #000000;
 }
-.my__class--view-all img {
+.my_class--view-all img {
     margin-left: 10.61px;
     width: 4.48px;
     height: 7.82px;

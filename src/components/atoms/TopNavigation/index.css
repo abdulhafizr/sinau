@@ -4,6 +4,7 @@
 }
 .top__navigation img {
     margin-right: 22.26px;
+    cursor: pointer;
 }
 .top__navigation p {
     font-family: Montserrat;

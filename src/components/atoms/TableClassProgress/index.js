@@ -19,42 +19,29 @@ function TableClassProgress({body}) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="table__class-progress-checked-body" id="table__class-progress-checked-body"/>
-                        </td>
-                        <td>Front-end fundamentals</td>
-                        <td>Software</td>
-                        <td>Learn the fundamentals of front end...</td>
-                        <td>
-                            <img src={DMProgressBar} alt="progress"/>
-                        </td>
-                        <td>
-                            <span className="btn-ongoing">Ongoing</span>
-                        </td>
-                        <td className="score">86</td>
-                        <td>
-                            <img src={ICList} alt="option"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="table__class-progress-checked-body" id="table__class-progress-checked-body"/>
-                        </td>
-                        <td>Front-end fundamentals</td>
-                        <td>Software</td>
-                        <td>Learn the fundamentals of front end...</td>
-                        <td>
-                            <img src={DMProgressBar} alt="progress"/>
-                        </td>
-                        <td>
-                            <span className="btn-ongoing">Ongoing</span>
-                        </td>
-                        <td className="score">86</td>
-                        <td>
-                            <img src={ICList} alt="option"/>
-                        </td>
-                    </tr>
+                    {
+                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                        .map((data, index) => (
+                            <tr key={index}>
+                                <td>
+                                    <input type="checkbox" name="table__class-progress-checked-body" id="table__class-progress-checked-body"/>
+                                </td>
+                                <td>Front-end fundamentals</td>
+                                <td>Software</td>
+                                <td>Learn the fundamentals of front end...</td>
+                                <td>
+                                    <img src={DMProgressBar} alt="progress"/>
+                                </td>
+                                <td>
+                                    <span className="btn-ongoing">Ongoing</span>
+                                </td>
+                                <td className="score">86</td>
+                                <td>
+                                    <img src={ICList} alt="option"/>
+                                </td>
+                            </tr>
+                        ))
+                    }
                 </tbody>
             </table>
         </div>

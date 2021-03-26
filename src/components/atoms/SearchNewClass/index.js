@@ -16,7 +16,7 @@ function SearchNewClass() {
             <div className="new__class-search-input">
                 <img src={ICSearch} alt="Search"/>
                 <input type="text" placeholder="Quick Search"/>
-                <button className="btn__search-class">Search</button>
+                <button className="btn__search-new-class">Search</button>
             </div>
             <div className="new__class-search-option">
                 <Dropdown isOpen={dropdownCategory} toggle={() => toggleCategory(setDropdownCategory)}>
