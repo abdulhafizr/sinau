@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {Row, Col} from 'reactstrap'
 import {Sidebar} from '../../components'
+import Profile from './Profile'
 import AllSchedule from './AllSchedule'
 import Activity from './Activity'
 import './index.css'
@@ -16,6 +17,9 @@ function Content() {
               <Switch>
                 <Route exact path="/">
                   <AllSchedule />
+                </Route>
+                <Route path="/profile">
+                  <Profile />
                 </Route>
                 <Route path="/activity">
                   <Activity />

@@ -18,7 +18,8 @@
 .sidebar__wrapper {
     height: 976px;
     border-radius: 20px;
-    background-color: var(--primary);
+    overflow: hidden;
+    background-color: #5784BA;
 }
 
 .sidebar__icon-notif {
@@ -30,11 +31,18 @@
 .sidebar__user-info {
     padding: 87px 32px 74px;
 }
-
 .sidebar__user-info img {
     width: 56px;
     height: 56px;
     object-fit: cover;
+    cursor: pointer;
+}
+.sidebar__wrapper.active {
+    background: #FFFFFF;
+}
+.sidebar__wrapper.active .user-name,
+.sidebar__wrapper.active .user-status {
+    color: #202020;
 }
 
 .user-name {
@@ -56,6 +64,11 @@
     color: var(--user-info);
 }
 
+.sidebar__main {
+    border-radius: 20px;
+    background-color: #5784BA;
+    height: 100%;
+}
 .sidebar__main-item {
     padding: 0 32px;
     height: 78px;

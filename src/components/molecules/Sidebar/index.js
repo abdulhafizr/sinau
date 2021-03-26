@@ -1,6 +1,7 @@
-import {Link, useLocation} from 'react-router-dom'
+import {Link, useHistory, useLocation} from 'react-router-dom'
 import {
     ICNotificationActive,
+    ICNotificationProfileActive,
     ICDashboard,
     ICDashboardActive,
     ICActivity,
@@ -14,15 +15,20 @@ import {
 import './index.css'
 
 function Sidebar() {
+    const route = useHistory()
     const currentRoute = useLocation();
     return (
-        <div className="sidebar__wrapper">
+        <div className={`sidebar__wrapper ${currentRoute.pathname === '/profile' && 'active'}`}>
             {/* Icon Notification */}
-            <img className="sidebar__icon-notif" src={ICNotificationActive} alt="icon notif"/>
+            <img className="sidebar__icon-notif" src={currentRoute.pathname === '/profile' ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
             
             {/* User Information */}
-            <div className="sidebar__user-info">
-                <img src={DMUser1} alt="user info"/>
+            <div className={`sidebar__user-info `}>
+                <img 
+                    src={DMUser1}
+                    onClick={() => route.push('/profile')} 
+                    alt="user info"
+                />
                 <h1 className="user-name">Emir Kharisma</h1>
                 <p className="user-status">online</p>
             </div>

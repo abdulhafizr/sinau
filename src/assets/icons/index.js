@@ -1,5 +1,6 @@
 // Sidebar Icons
 import ICNotificationActive from './notif-active.svg'
+import ICNotificationProfileActive from './notif-profile-active.svg'
 import ICDashboard from './dashboard.svg'
 import ICDashboardActive from './dashboard-active.svg'
 import ICActivity from './activity.svg'
@@ -30,6 +31,7 @@ import ICCalendar from './calendar.svg'
 
 export {
     ICNotificationActive,
+    ICNotificationProfileActive,
     ICActivity,
     ICActivityActive,
     ICDashboard,
