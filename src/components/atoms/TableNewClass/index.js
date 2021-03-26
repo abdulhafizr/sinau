@@ -19,17 +19,17 @@ function TableNewClass() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr 
-                        className="shadow-sm"
-                        onClick={() => route.push('/activity/class-detail')}
-                    >
+                    <tr className="shadow-sm">
                         <td>Know more Javascript</td>
                         <td>Software</td>
                         <td>Javascript from the basic for...</td>
                         <td>Beginner</td>
                         <td>Free</td>
                         <td>
-                            <span className="btn-register">Register</span>
+                            <span 
+                                className="btn-register" 
+                                onClick={() => route.push('/activity/class-detail')}
+                            >Register</span>
                         </td>
                         <td>
                             <img src={ICList} alt="list"/>
