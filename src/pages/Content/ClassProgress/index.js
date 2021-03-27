@@ -1,10 +1,11 @@
+import {Switch, useRouteMatch, useHistory, Route, NavLink} from 'react-router-dom'
 import {Progress} from 'reactstrap'
-import {TopNavigation, ClassDetailHeader} from '../../../components'
-import {useHistory} from 'react-router-dom'
+import {ClassDetailHeader, ClassInformation, ClassProgressUser, TopNavigation} from '../../../components'
 import './index.css'
 
 function ClassProgress() {
     const route = useHistory()
+    const currentRoute = useRouteMatch()
     return (
         <div className="class__progress">
             <TopNavigation label="Know more Javascript" onClick={route.goBack} />
@@ -15,27 +16,24 @@ function ClassProgress() {
                      <p>80% to complete</p>
                      <Progress value={80} />
                     </div>
+
                     <div className="class__progress-information-header">
-                        <p className="active">Information</p>
-                        <p>Class Progress</p>
-                        <p>Class Discussion</p>
+                        <NavLink activeClassName="active" to={currentRoute.url} exact>Information</NavLink>
+                        <NavLink activeClassName="active" to={`${currentRoute.url}/progress`}>Class Progress</NavLink>
+                        <NavLink activeClassName="active" to={`${currentRoute.url}/class-discussion`}>Class Discussion</NavLink>
                     </div>
-                    <div className="class__progress-information-body">
-                        <h1>Description</h1>
-                        <p>Javascript from the basic for beginner. JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This class helps you get started with JavaScript and furthers your understanding of what is possible.</p>
-                        <h1>What will I learn?</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                        </ul>
-                        <h1>Content 2</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis. </li>
-                        </ul>
-                    </div>
+                    
+                    <Switch>
+                        <Route exact path={currentRoute.url}>
+                            <ClassInformation />
+                        </Route>
+                        <Route path={`${currentRoute.url}/progress`}>
+                            <ClassProgressUser />
+                        </Route>
+                        <Route path={`${currentRoute.url}/class-discussion`}>
+                            Class Discussion
+                        </Route>
+                    </Switch>
                 </div>
             </div>
         </div>

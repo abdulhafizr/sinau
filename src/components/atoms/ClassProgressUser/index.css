@@ -1,0 +1,66 @@
+.class__progress-user {
+    padding-top: 24px;
+}
+.class__progress-user-table {
+    width: 100%;
+}
+.class__progress-user-table tr {
+    border-radius: 5px;
+    overflow: hidden;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 4px 8px -1.5px rgb(49 49 49 / 12%);
+}
+.class__progress-user-table tr:last-child {
+    border-bottom: none;
+}
+.class__progress-user-table td {
+    padding: 20px 32px;
+}
+.class__progress-user-table td:nth-child(2) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.class__progress-user-table td:nth-child(3) {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #979797;
+}
+.class__progress-user-table td.unfinished {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.class__progress-user-table td:nth-child(4) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #2BE7D0;
+}
+
+.class__progress-user-table td .btn__unfinished {
+    padding: 4px 8px;
+    background: #EDD2D2;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BA5757;
+}

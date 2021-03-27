@@ -1,0 +1,24 @@
+.class__information h1 {
+    margin-top: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.class__information p {
+    margin-top: 24px;
+}
+.class__information ul {
+    margin-top: 35px;
+}
+.class__information p,
+.class__information li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
