@@ -21,11 +21,14 @@ function MyClass() {
                     />
                     <div className="my__class-header">
                         <SearchMyClass />
-                        <select name="sortby" id="sortby">
-                            <option value="sortby1">Sortby 1</option>
-                            <option value="sortby2">Sortby 2</option>
-                            <option value="sortby3">Sortby 3</option>
-                        </select>
+                        <div className="sort-by-wrapper">
+                            <span className="sortby__label">Sort by : </span>
+                            <select className="form-select sort-by" aria-label="Default select example">
+                                <option value="1">All Categories</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                     </div>
                     <Gap height={16} />
                     <TableClassProgress 
