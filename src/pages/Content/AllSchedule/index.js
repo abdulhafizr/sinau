@@ -5,7 +5,7 @@ import './index.css'
 function AllSchedule() {
     return (
         <div className="all-schedule">
-            <Row>
+            <Row className="all-schedule-row">
                 <Col className="all-schedule__main">
                     <News />
                     <Gap height={33} />

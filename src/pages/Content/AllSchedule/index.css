@@ -30,13 +30,16 @@ div.all-schedule__message {
 }
 
 @media (max-width: 991.98px) {
+    .row.all-schedule-row {
+        flex-direction: column;
+    }
     .schedule__wrapper {
         margin-bottom: 32px;
+    }
+    .all-schedule {
+        margin-left: 12px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .all-schedule {
-        margin-left: 0;
-    }
 }

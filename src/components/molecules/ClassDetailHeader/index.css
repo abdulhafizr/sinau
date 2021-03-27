@@ -48,7 +48,7 @@
 .class__photo img {
     width: 166.67px;
     height: 111.11px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .btn__register {
     padding: 9px 24px;
@@ -97,5 +97,35 @@
     }
     .score__class h1 {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .class__detail-header {
+        padding: 0 30px 17px 40px;
+        height: 250px;
+    }
+    .class__name {
+        font-size: 15px;
+    }
+    .class__info-item {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    .score__class h1 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .class__photo {
+        margin-right: 16px;
+        width: 150px;
+        height: 150px;
+        transform: translateY(60px);
+    }
+    .class__photo img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
     }
 }

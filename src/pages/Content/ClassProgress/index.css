@@ -72,6 +72,16 @@
 
 @media (max-width: 991.98px) {
     .class__progress {
-        padding: 16px 0 0 0;
+        padding: 16px 0 0 12px;
     }   
+    .class__progress-information {
+        padding: 0 40px 37px 40px;
+    }
+    .class__progress-percentage {
+        height: 50px;
+        padding-left: 161px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

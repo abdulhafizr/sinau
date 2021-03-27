@@ -101,6 +101,13 @@
     left: 0;
 }
 
+
+@media (max-width: 1199.98px) {
+    .sidebar__main-item img {
+        margin-right: 15px;
+    }
+}
+
 @media (max-width: 991.98px) {
     .sidebar__icon-notif {
         display: none;
