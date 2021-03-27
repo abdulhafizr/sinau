@@ -102,5 +102,31 @@
 }
 
 @media (max-width: 991.98px) {
-
+    .sidebar__icon-notif {
+        display: none;
+    }
+    .sidebar__user-info {
+        padding: 100px 0 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar__user-info img {
+        width: 40px;
+        height: 40px;
+    }
+    .user-name,
+    .user-status,
+    .sidebar__main-item p {
+        display: none;
+    }
+    .sidebar__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar__main-item img {
+        margin-right: 0;
+    }
+    .sidebar__main-item {
+        justify-content: center;
+    }
 }
