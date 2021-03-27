@@ -30,9 +30,6 @@ div.all-schedule__message {
 }
 
 @media (max-width: 991.98px) {
-    div.all-schedule__main {
-        margin-right: 0;
-    }
     .schedule__wrapper {
         margin-bottom: 32px;
     }
