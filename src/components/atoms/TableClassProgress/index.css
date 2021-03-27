@@ -92,3 +92,10 @@ input[name="table__class-progress-checked-body"] {
         padding: 10px 10px 10px 0;
     }
 }
+
+@media (max-width: 1199.98px) {
+    .table__class-progress table th:first-child,
+    .table__class-progress table td:first-child {
+        padding: 10px 10px;
+    }
+}

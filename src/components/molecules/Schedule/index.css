@@ -85,3 +85,12 @@
         font-size: 13px;
     }
 }
+@media (max-width: 1199.98px) {
+    .schedule__user-persection {
+        flex-wrap: wrap;
+    }
+    .schedule__time {
+        width: 100%;
+        padding: 19px 25px;
+    }
+}
