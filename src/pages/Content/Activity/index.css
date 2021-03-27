@@ -50,8 +50,12 @@
     color: #000000;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
     .activity {
-        margin-left: 0;
+        margin-left: 20px;
     }
+}
+
+@media (max-width: 991.98px) {
+    
 }
