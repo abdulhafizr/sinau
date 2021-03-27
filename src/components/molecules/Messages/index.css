@@ -70,3 +70,16 @@
     top: 0;
     right: 0;
 }
+
+
+/* Responsive BreakPoints */
+@media (max-width: 1399.98px) {
+    .message img {
+        margin-right: 30.05px;
+        width: 55px;
+        height: 55px;
+    }
+    .message__timestamp {
+        font-size: 12px;
+    }
+}

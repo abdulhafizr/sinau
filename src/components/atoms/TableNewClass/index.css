@@ -37,3 +37,11 @@
     color: #FEFEFE;
     cursor: pointer;
 }
+
+
+@media (max-width: 1399.98px) {
+    .table__new-class table th, 
+    .table__new-class table td {
+        padding: 18px 12px;
+    }
+}

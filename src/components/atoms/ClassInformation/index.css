@@ -7,13 +7,13 @@
     line-height: 29px;
     color: #000000;
 }
-.class__information p {
+.class__information-item {
     margin-top: 24px;
 }
 .class__information ul {
     margin-top: 35px;
 }
-.class__information p,
+.class__information-item,
 .class__information li {
     font-family: Roboto;
     font-style: normal;

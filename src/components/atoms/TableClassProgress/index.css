@@ -84,3 +84,11 @@ input[name="table__class-progress-checked-body"] {
     line-height: 15px;
     color: #5784BA;
 }
+
+
+/* Responsive BreakPoints */
+@media (max-width: 1399.98px) {
+    .table__class-progress table td {
+        padding: 10px 10px 10px 0;
+    }
+}

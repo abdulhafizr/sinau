@@ -69,3 +69,19 @@
     letter-spacing: 0.05em;
     color: #010620;
 }
+
+
+/* Responsive BreakPoints */
+@media (max-width: 1399.98px) {
+    .schedule__item p {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .schedule__time {
+        min-width: fit-content;
+    }
+    .schedule__time h1 {
+        padding: 0 10px;
+        font-size: 13px;
+    }
+}

@@ -24,7 +24,7 @@
     color: #000000;
     margin-bottom: 16px;
 }
-.class__info p {
+.class__info-item {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -80,4 +80,21 @@
     line-height: 78px;
     letter-spacing: 0.05em;
     color: #51E72B;
+    text-align: center;
+}
+
+
+@media (max-width: 1399.98px) {
+    .class__detail-header {
+        padding: 0 30px 17px 80px;
+    }
+    .class__info-item {
+        margin-right: 15px;
+    }
+    .btn__register {
+        font-size: 18px;
+    }
+    .score__class h1 {
+        font-size: 50px;
+    }
 }

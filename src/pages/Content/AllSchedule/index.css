@@ -15,3 +15,10 @@ div.all-schedule__main {
 div.all-schedule__message {
     max-width: 484px;
 }
+
+/* Responsive BreakPoints */
+@media (max-width: 1399.98px) {
+    div.all-schedule__message {
+        max-width: 400px;
+    }
+}

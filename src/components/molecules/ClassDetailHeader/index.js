@@ -11,9 +11,9 @@ function Calendar({type}) {
                 <div className="class__information">
                     <h1 className="class__name">Know More Javascript</h1>
                     <div className="class__info">
-                        <p>Level : Beginner</p>
-                        <p>Category : Software</p>
-                        <p>Price : Free</p>
+                        <p className="class__info-item">Level : Beginner</p>
+                        <p className="class__info-item">Category : Software</p>
+                        <p className="class__info-item">Price : Free</p>
                     </div>
                 </div>
                 <button className="btn__register">Register</button>
@@ -28,9 +28,9 @@ function Calendar({type}) {
             <div className="class__information">
                 <h1 className="class__name">Know More Javascript</h1>
                 <div className="class__info">
-                    <p>Level : Beginner</p>
-                    <p>Category : Software</p>
-                    <p>Price : Free</p>
+                    <p className="class__info-item">Level : Beginner</p>
+                    <p className="class__info-item">Category : Software</p>
+                    <p className="class__info-item">Price : Free</p>
                 </div>
             </div>
             <div className="score__class">
