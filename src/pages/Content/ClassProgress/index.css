@@ -1,25 +1,54 @@
-.class__detail {
+.class__progress {
     padding: 16px 0 0 40px;
 }
 
-.class__detail-body {
+.class__progress-body {
     margin-top: 24px;
     background: #FFFFFF;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.class__detail-information {
-    padding: 112px 80px 37px 80px;
+.class__progress-information {
+    padding: 0 80px 37px 80px;
 }
-.class__detail-information-header {
+.class__progress-percentage {
+    height: 112px;
+    padding-left: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.class__progress-percentage p {
+    margin-bottom: 2px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5784BA;
+}
+.class__progress-percentage .progress {
+    height: 3px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    overflow: visible;
+}
+.class__progress-percentage .progress-bar {
+    transform: translateY(-2px);
+    height: 7px;
+    background: #5784BA;
+    border-radius: 10px;
+}
+
+.class__progress-information-header {
     display: flex;
     align-items: center;
     position: relative;
     border-bottom: 0.7px solid #000000;
 }
 
-.class__detail-information-header p {
+.class__progress-information-header p {
     padding-bottom: 6px;
     font-family: Roboto;
     font-style: normal;
@@ -29,16 +58,15 @@
     color: #000000;
     margin-right: 62px;
     margin-bottom: -2px;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
-.class__detail-information-header p.active {
+.class__progress-information-header p.active {
     color: #5784BA;
     position: relative;
     border-bottom: 3px solid #5784BA;
-    cursor: pointer;
 }
-.class__detail-information-body h1 {
+.class__progress-information-body h1 {
     margin-top: 32px;
     font-family: Montserrat;
     font-style: normal;
@@ -47,14 +75,14 @@
     line-height: 29px;
     color: #000000;
 }
-.class__detail-information-body p {
+.class__progress-information-body p {
     margin-top: 24px;
 }
-.class__detail-information-body ul {
+.class__progress-information-body ul {
     margin-top: 35px;
 }
-.class__detail-information-body p,
-.class__detail-information-body li {
+.class__progress-information-body p,
+.class__progress-information-body li {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;

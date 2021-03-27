@@ -8,7 +8,7 @@ function ClassDetail() {
         <div className="class__detail">
             <TopNavigation label="Know more Javascript" onClick={route.goBack} />
             <div className="class__detail-body">
-                <ClassDetailHeader />
+                <ClassDetailHeader type="class-detail" />
                 <div className="class__detail-information">
                     <div className="class__detail-information-header">
                         <p className="active">Information</p>

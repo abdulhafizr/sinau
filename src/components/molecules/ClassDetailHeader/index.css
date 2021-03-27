@@ -61,3 +61,23 @@
     color: #FEFEFE;
     border: none;
 }
+.score__class {
+    transform: translateY(17px);
+}
+.score__class p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.score__class h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0.05em;
+    color: #51E72B;
+}
