@@ -68,3 +68,20 @@ label[for="change__photo"] {
     margin-bottom: 0;
     cursor: pointer;
 }
+
+
+@media (max-width: 767.98px) {
+    .header__profile-body img {
+        width: 150px;
+        height: 150px;
+    }
+    .header__profile {
+        height: 300px;
+    }
+    .header__profile-body {
+        bottom: 30px;
+    }
+    .profile__body {
+        padding: 45px 66px 80px 60px;
+    }
+}
