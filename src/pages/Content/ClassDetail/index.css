@@ -50,6 +50,9 @@
 }
 
 @media (max-width: 767.98px) {
+    .class__detail {
+        padding: 0;
+    }
     .class__detail-body {
         margin-top: 10px;
     }
