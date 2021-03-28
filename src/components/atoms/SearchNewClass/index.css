@@ -78,3 +78,31 @@ img.option__arrow {
 
 
 
+@media (max-width: 767.98px) {
+    .new__class-search-input img {
+        left: 11px;
+        top: 11px;
+    }
+    .new__class-search-input input {
+        height: 32px;
+        padding: 0 5px 0 32px;
+    }
+    .new__class-search-input input::placeholder {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .btn__search-new-class {
+        padding: 6px 8px;
+        height: 32px;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .new__class-search-option {
+        height: 24px;
+    }
+    .btn-option-category {
+        font-size: 10px;
+    }
+}

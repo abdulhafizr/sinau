@@ -61,4 +61,12 @@
         padding: 3px 9px;
         font-size: 9px;
     }
+
+    .table__new-class table th:nth-child(2),
+    .table__new-class table th:nth-child(3),
+    .table__new-class table td:nth-child(2),
+    .table__new-class table td:nth-child(3),
+    .table__new-class table td:nth-child(7) {
+        display: none;
+    }
 }

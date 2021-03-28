@@ -50,6 +50,7 @@
     color: #000000;
 }
 
+
 @media (max-width: 1199.98px) {
     .activity {
         margin-left: 20px;
@@ -59,5 +60,27 @@
 @media (max-width: 991.98px) {
     .activity {
         margin-left: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .activity {
+        margin: 0;
+        padding: 0;
+    }
+    .activity__label {
+        margin: 10px 0 5px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .new__class {
+        padding: 25px 15px;
+    }
+    .new__class-label {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .new__class .gap {
+        height: 10px;
     }
 }

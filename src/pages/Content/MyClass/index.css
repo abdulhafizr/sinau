@@ -81,3 +81,25 @@ select[name="sortby"] {
         margin-left: 10px;
     }
 }
+
+@media (max-width: 767.98px) {
+    .sort-by-wrapper {
+        display: none;
+    }
+    .my__class-search-input {
+        flex-wrap: wrap;
+    }
+    .my__class-search-input img {
+        left: 11px;
+        top: 11px;
+    }
+    .my__class-search-input input {
+        height: 32px;
+        padding: 0 10px 0 32px;
+        margin-right: 8px;
+    }
+    .btn__search-class {
+        padding: 0 12px;
+        height: 32px;
+    }
+}

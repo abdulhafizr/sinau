@@ -24,11 +24,6 @@ html {
 }
 
 
-@media (max-width: 1199.98px) {
-    /* .row {
-        flex-wrap: nowrap;
-    } */
-}
 @media (max-width: 991.98px) {
     .sidebar {
         max-width: 60px;
