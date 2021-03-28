@@ -15,9 +15,6 @@
 .class__progress-percentage {
     height: 112px;
     padding-left: 272px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .class__progress-percentage p {
     margin-bottom: 2px;
@@ -83,5 +80,55 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .class__progress {
+        padding: 0;
+    }
+    .class__progress-body {
+        margin-top: 14px;
+    }
+    .class__detail-header {
+        padding: 10px;
+        height: 150px;
+    }
+    .class__photo {
+        margin-right: 10px;
+        width: 100px;
+        height: 100px;
+        transform: translateY(40px);
+    }
+    .class__photo img {
+        width: 50px;
+        height: 50px;
+    }
+    .class__name {
+        line-height: 18.93px;
+        margin-bottom: 5px;
+    }
+    .class__info-item {
+        margin-right: 5px;
+        font-size: 8px;
+    }
+    .score__class {
+        display: none;
+    }
+
+    .class__progress-information {
+        padding: 0 10px 80px 10px;
+    }
+    .class__progress-percentage {
+        height: 30px;
+        padding-left: 110px;
+    }
+    .class__progress-information-header {
+        margin-top: 20px;
+    }
+    .class__progress-information-header a {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 20px;
     }
 }

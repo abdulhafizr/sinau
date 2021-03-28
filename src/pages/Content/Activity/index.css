@@ -67,6 +67,7 @@
     .activity {
         margin: 0;
         padding: 0;
+        padding-bottom: 80px;
     }
     .activity__label {
         margin: 10px 0 5px;

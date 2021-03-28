@@ -8,6 +8,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
 }
 .class__information {
     flex: 1;

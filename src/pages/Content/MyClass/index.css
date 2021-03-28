@@ -83,6 +83,9 @@ select[name="sortby"] {
 }
 
 @media (max-width: 767.98px) {
+    .my__class {
+        padding: 0 0 80px 0;
+    }
     .sort-by-wrapper {
         display: none;
     }
