@@ -137,3 +137,31 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 767.98px) {
+    .sidebar__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+    .sidebar__user-info {
+        padding: 0;
+    }
+    .sidebar__main {
+        flex-direction: row;
+    }
+    .sidebar__main-item {
+        height: 100%;
+    }
+    .sidebar__main-item.active {
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: 0;
+    }
+    .sidebar__main-item.active::after {
+        display: none;
+    }
+}
