@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Sinau
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-## Available Scripts
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+### Menjalan Projek
+```sh
+cd sinau
+yarn install
+yarn start
+```
 
-In the project directory, you can run:
+### Ada 8 endpoint/Halaman pada template ini :
+```sh
+localhost:3000
+localhost:3000/profile
+localhost:3000/activity
+localhost:3000/activity/my-class
+localhost:3000/activity/my-class/class-progress
+localhost:3000/activity/my-class/class-progress/progress
+localhost:3000/activity/my-class/class-progress/class-discussion
+localhost:3000/activity/class-detail
+```
 
-### `yarn start`
+## Halaman Profile
+- Halaman Profile | localhost:3000/profile
+![Halaman Dashboard](https://raw.githubusercontent.com/abdulhafizr/sinau/main/docs/Profile/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.45.06%20PM.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Halaman Dashboard
+- Halaman Dashboard | localhost:3000
+![Halaman Dashboard](https://raw.githubusercontent.com/abdulhafizr/sinau/main/docs/Dashboard/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.43.23%20PM.jpg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Halaman Activity
+- Halaman Activity | localhost:3000/activity
+![Halaman Activity](https://github.com/abdulhafizr/sinau/blob/main/docs/Activity/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.46.48%20PM.jpg?raw=true)
 
-### `yarn test`
+## Halaman My Class
+- Halaman My Class | localhost:3000/activity/my-class
+![Halaman ](https://github.com/abdulhafizr/sinau/blob/main/docs/My%20Class/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%202.11.22%20PM.jpg?raw=true)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Halaman Class Progress
+- Halaman Class Progress | localhost:3000/activity/my-class/class-progress
+![Halaman ](https://github.com/abdulhafizr/sinau/blob/main/docs/Class%20Progress/Information/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.47.37%20PM.jpg?raw=true)
+- Halaman Class Progress / Progress | localhost:3000/activity/my-class/class-progress/progress
+![Halaman ](https://github.com/abdulhafizr/sinau/blob/main/docs/Class%20Progress/Progress/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.48.48%20PM.jpg?raw=true)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Halaman Class Detail
+- Halaman Class Detail | localhost:3000/activity/class-detail
+![Halaman Class Detail ](https://github.com/abdulhafizr/sinau/blob/main/docs/Class%20Detail/Localhost%20-%20Generic%20Laptop%20-%202021-28-3%20at%201.51.29%20PM.jpg?raw=true)
