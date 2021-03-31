@@ -1,4 +1,4 @@
-import {DMUser1, ICEditProfile} from '../../../assets'
+import {DMUser1, ICEditProfile} from '../../assets'
 import './index.css'
 
 function HeaderProfile() {

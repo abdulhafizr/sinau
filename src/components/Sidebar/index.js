@@ -10,17 +10,19 @@ import {
     ICHelpActive,
     ICLogout,
     DMUser1
-} from '../../../assets'
+} from '../../assets'
 
 import './index.css'
 
 function Sidebar() {
+
     const route = useHistory()
-    const currentRoute = useLocation();
+    const {pathname} = useLocation()
+    
     return (
-        <div className={`sidebar__wrapper ${currentRoute.pathname === '/profile' && 'active'}`}>
+        <div className={`sidebar__wrapper ${pathname === '/profile' ? 'active' : ''}`}>
             {/* Icon Notification */}
-            <img className="sidebar__icon-notif" src={currentRoute.pathname === '/profile' ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
+            <img className="sidebar__icon-notif" src={pathname === '/profile' ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
             
             {/* User Information */}
             <div className={`sidebar__user-info `}>
@@ -37,25 +39,25 @@ function Sidebar() {
             <div className="sidebar__main">
                 <Link 
                     to="/" 
-                    className={`sidebar__main-item ${currentRoute.pathname === '/' && 'active'}`}
+                    className={`sidebar__main-item ${pathname === '/' || pathname === '/my' ? 'active' : ''}`}
                 >
-                    <img src={currentRoute.pathname === '/' ? ICDashboardActive : ICDashboard} alt="dashboard icon"/>
+                    <img src={pathname === '/' || pathname === '/my' ? ICDashboardActive : ICDashboard} alt="dashboard icon"/>
                     <p>Dashboard</p>
                 </Link>
                 
                 <Link 
                     to="/activity" 
-                    className={`sidebar__main-item ${currentRoute.pathname.includes('/activity') && 'active'}`}
+                    className={`sidebar__main-item ${pathname.includes('/activity') ? 'active' : ''}`}
                 >
-                    <img src={currentRoute.pathname.includes('/activity') ? ICActivityActive : ICActivity} alt="activity icon"/>
+                    <img src={pathname.includes('/activity') ? ICActivityActive : ICActivity} alt="activity icon"/>
                     <p>Activity</p>
                 </Link>
                 
                 <Link 
                     to="/help" 
-                    className={`sidebar__main-item ${currentRoute.pathname === '/help' && 'active'}`}
+                    className={`sidebar__main-item ${pathname === '/help' ? 'active' : ''}`}
                 >
-                    <img src={currentRoute.pathname === '/help'? ICHelpActive : ICHelp} alt="help icon"/>
+                    <img src={pathname === '/help'? ICHelpActive : ICHelp} alt="help icon"/>
                     <p>Help</p>
                 </Link>
                 

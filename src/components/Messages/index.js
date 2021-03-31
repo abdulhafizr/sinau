@@ -1,5 +1,5 @@
-import {ICAddMessage, DMUser1} from '../../../assets'
-import {SearchMessage} from '../../../components'
+import {ICAddMessage, DMUser1} from '../../assets'
+import {SearchMessage} from '../../components'
 import './index.css'
 
 function Messages() {

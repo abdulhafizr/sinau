@@ -1,4 +1,4 @@
-import {ICList} from '../../../assets'
+import {ICList} from '../../assets'
 import './index.css'
 
 function TableNewClass({onClick}) {

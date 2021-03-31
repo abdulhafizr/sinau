@@ -1,4 +1,4 @@
-import {DMClassDetail} from '../../../assets'
+import {DMClassDetail} from '../../assets'
 import './index.css'
 
 function Calendar({type}) {

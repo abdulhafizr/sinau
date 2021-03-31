@@ -1,4 +1,4 @@
-import {DMProgressBar, ICList} from '../../../assets'
+import {DMProgressBar, ICList} from '../../assets'
 import './index.css'
 
 function TableClassProgress({onClick}) {

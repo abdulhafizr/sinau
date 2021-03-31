@@ -1,4 +1,4 @@
-import {ICBackArrow} from '../../../assets'
+import {ICBackArrow} from '../../assets'
 import './index.css'
 
 function TopNavigation({label, type, onClick}) {

@@ -1,4 +1,4 @@
-import {ICCalendar} from '../../../assets'
+import {ICCalendar} from '../../assets'
 import './index.css'
 
 const calendar = [

@@ -1,4 +1,4 @@
-import {ICPaginateLeft, ICPaginateRight} from '../../../assets'
+import {ICPaginateLeft, ICPaginateRight} from '../../assets'
 import './index.css'
 
 function Pagination() {

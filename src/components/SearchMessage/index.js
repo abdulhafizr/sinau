@@ -1,4 +1,4 @@
-import { ICSearchMessage } from '../../../assets'
+import { ICSearchMessage } from '../../assets'
 import './index.css'
 
 function SearchMessage() {

@@ -1,4 +1,4 @@
-import {DMNews1} from '../../../assets'
+import {DMNews1} from '../../assets'
 import './index.css'
 
 function News() {
