@@ -10,6 +10,9 @@
     top: 34.47px;
     right: 28.09px;
 }
+.sidebar__icon-message {
+    display: none;
+}
 
 .sidebar__user-info {
     padding: 87px 32px 74px;
@@ -147,16 +150,36 @@
         justify-content: space-between;
         padding: 0 12px;
     }
-    .sidebar__icon-notif {
-        top: 14px;
-        left: 14px;
-        position: fixed;
-    }
     .sidebar__user-info {
         padding: 0;
     }
     .sidebar__main {
         flex-direction: row;
+    }
+    .sidebar__icon-notif {
+        top: auto;
+        right: 14px;
+        bottom: 90px;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background: #5784BA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .sidebar__icon-message {
+        right: 14px;
+        bottom: 144px;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background: #5784BA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
     }
     .sidebar__main-item {
         height: 100%;

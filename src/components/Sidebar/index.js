@@ -1,5 +1,6 @@
 import {Link, useHistory, useLocation} from 'react-router-dom'
 import {
+    ICMessage,
     ICNotificationActive,
     ICNotificationProfileActive,
     ICDashboard,
@@ -19,10 +20,29 @@ function Sidebar() {
     const route = useHistory()
     const {pathname} = useLocation()
 
+    const toggleMessage = () => {
+        const message = document.querySelector('.messages')
+        message.classList.toggle('active')
+    }
+
     return (
         <div className={`sidebar__wrapper ${pathname === '/profile' ? 'active' : ''}`}>
+            
             {/* Icon Notification */}
-            <img className="sidebar__icon-notif" src={pathname === '/profile' || window.screen.width < 768 ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
+            <div className="sidebar__icon-notif">
+                <img src={pathname === '/profile' ? ICNotificationProfileActive :ICNotificationActive} alt="notif"/>
+            </div>
+            {/* Icon Message for Mobile Screen */}
+            {
+                pathname === '/' || pathname === '/my' ? (
+                    <div 
+                        className="sidebar__icon-message"
+                        onClick={toggleMessage}
+                    >
+                        <img src={ICMessage} alt="message"/>
+                    </div>
+                ) : ""
+            }
             
             {/* User Information */}
             <div className={`sidebar__user-info `}>

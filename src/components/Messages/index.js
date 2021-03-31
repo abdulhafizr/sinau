@@ -3,10 +3,12 @@ import {SearchMessage} from '../../components'
 import './index.css'
 
 function Messages({data = []}) {
+    
     const toggleMessage = () => {
         const message = document.querySelector('.messages')
         message.classList.toggle('active')
     }
+
     return (
         <div className="messages">
             <div className="messages__header">

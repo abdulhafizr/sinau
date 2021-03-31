@@ -11,6 +11,7 @@ import ICLogout from './logout.svg'
 
 // Utils Icons
 import ICAddMessage from './add-message.svg'
+import ICMessage from './message.svg'
 import ICBackArrow from './back-arrow.svg'
 import ICBottomArrow from './bottom-arrow.svg'
 import ICChangePassword from './change-password.svg'
@@ -40,6 +41,7 @@ export {
     ICHelpActive,
     ICLogout,
     ICAddMessage,
+    ICMessage,
     ICBackArrow,
     ICBottomArrow,
     ICChangePassword,
