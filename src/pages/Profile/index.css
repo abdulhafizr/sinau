@@ -51,4 +51,7 @@
     .profile {
         margin-left: 0;
     }
+    .profile__body {
+        padding: 35px 40px 62px 40px;
+    }
 }

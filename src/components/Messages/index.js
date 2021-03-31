@@ -1,13 +1,22 @@
-import {ICAddMessage, DMUser1} from '../../assets'
+import {ICAddMessage, ICRightArrow, DMUser1} from '../../assets'
 import {SearchMessage} from '../../components'
 import './index.css'
 
 function Messages({data = []}) {
+    const toggleMessage = () => {
+        const message = document.querySelector('.messages')
+        message.classList.toggle('active')
+    }
     return (
         <div className="messages">
             <div className="messages__header">
+                <img 
+                    src={ICRightArrow} 
+                    onClick={toggleMessage}
+                    alt="Back"
+                />
                 <h1>Messages</h1>
-                <img src={ICAddMessage} alt="Add Message"/>
+                <img src={ICAddMessage} alt="Add"/>
             </div>
 
             <SearchMessage />

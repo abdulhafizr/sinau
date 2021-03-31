@@ -110,7 +110,8 @@
 
 @media (max-width: 991.98px) {
     .sidebar__icon-notif {
-        display: none;
+        top: 30px;
+        right: 18px;
     }
     .sidebar__user-info {
         padding: 100px 0 50px;
@@ -145,6 +146,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 12px;
+    }
+    .sidebar__icon-notif {
+        top: 14px;
+        left: 14px;
+        position: fixed;
     }
     .sidebar__user-info {
         padding: 0;

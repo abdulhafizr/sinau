@@ -10,6 +10,9 @@
     align-items: center;
     margin-bottom: 23.67px;
 }
+.messages__header img:first-child {
+    display: none;
+}
 .messages__header h1 {
     font-family: Montserrat;
     font-style: normal;
@@ -81,5 +84,26 @@
     }
     .message__timestamp {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .messages {
+        padding: 14px 20px;
+        transition: all .3s ease;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        overflow: scroll;
+        z-index: 100;
+    }
+    .messages.active {
+        left: 0;
+    }
+    .messages__header img:first-child{
+        display: block;
     }
 }

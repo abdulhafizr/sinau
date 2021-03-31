@@ -110,6 +110,7 @@ function Activity() {
 
             {/* Activity */}
             <Route exact path={path}>
+                
                 <div className="activity">
                     <TopNavigation label="Activity" type="text-only" />
                     

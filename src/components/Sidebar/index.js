@@ -22,7 +22,7 @@ function Sidebar() {
     return (
         <div className={`sidebar__wrapper ${pathname === '/profile' ? 'active' : ''}`}>
             {/* Icon Notification */}
-            <img className="sidebar__icon-notif" src={pathname === '/profile' ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
+            <img className="sidebar__icon-notif" src={pathname === '/profile' || window.screen.width < 768 ? ICNotificationProfileActive :ICNotificationActive} alt="icon notif"/>
             
             {/* User Information */}
             <div className={`sidebar__user-info `}>
