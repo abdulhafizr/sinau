@@ -1,0 +1,157 @@
+.my__class {
+    padding: 16px 16px 16px 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.my__class-header {
+    margin-top: 39.24px;
+    display: flex;
+}
+select[name="sortby"] {
+    margin-left: 95px;
+    border: none;
+    background-color: #FFF;
+    padding: 10px 5px 10px 63px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #000000;
+}
+.sort-by-wrapper {
+    position: relative;
+    margin-left: 95px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #FFF;
+    z-index: 10;
+}
+.sort-by-wrapper .sort-by {
+    border: none;
+    min-width: 192px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 63px;
+    height: 100%;
+    color: #000;
+    background: transparent;
+    z-index: 30;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.sort-by-wrapper .sort-by:focus {
+    outline: none;
+}
+.sort-by-wrapper::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../../assets/icons/bottom-arrow.svg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    width: 28px;
+    height: 100%;
+    background: #E9E9E9;
+    z-index: 20;
+}
+.sortby__label {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    font-size: 11px;
+    color: #9A9A9A;
+}
+
+/* Search My Class */
+.my__class-search {
+    flex: 1;
+}
+.my__class-search-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.my__class-search-input input {
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex: 1;
+    padding: 0 40px;
+    margin-right: 8px;
+}
+.my__class-search-input input::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ADA9A9;
+}
+.my__class-search-input img {
+    position: absolute;
+    left: 17.17px;
+    top: 14.17px;
+    z-index: 50;
+}
+.btn__search-class {
+    padding: 0 28px;
+    display: block;
+    background: #5784BA;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 991.98px) {
+    .my__class {
+        padding: 16px 0px 0 12px;
+    }
+    .sort-by-wrapper {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .my__class {
+        padding: 0 0 80px 0;
+    }
+    .sort-by-wrapper {
+        display: none;
+    }
+    .my__class-search-input {
+        flex-wrap: wrap;
+    }
+    .my__class-search-input img {
+        left: 11px;
+        top: 11px;
+    }
+    .my__class-search-input input {
+        height: 32px;
+        padding: 0 10px 0 32px;
+        margin-right: 8px;
+    }
+    .btn__search-class {
+        padding: 0 12px;
+        height: 32px;
+    }
+}

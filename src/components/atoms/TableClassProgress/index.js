@@ -20,7 +20,7 @@ function TableClassProgress({onClick}) {
                 </thead>
                 <tbody>
                     {
-                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                         .map((data, index) => (
                             <tr key={index}>
                                 <td>

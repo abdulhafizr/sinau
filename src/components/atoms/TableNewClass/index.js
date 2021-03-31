@@ -1,10 +1,7 @@
-import {useHistory} from 'react-router-dom'
 import {ICList} from '../../../assets'
 import './index.css'
 
-function TableNewClass() {
-
-    const route = useHistory()
+function TableNewClass({onClick}) {
     
     return (
         <div className="table__new-class">
@@ -28,7 +25,7 @@ function TableNewClass() {
                         <td>
                             <span 
                                 className="btn-register" 
-                                onClick={() => route.push('/activity/class-detail')}
+                                onClick={onClick}
                             >Register</span>
                         </td>
                         <td>

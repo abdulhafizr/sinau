@@ -1,10 +1,15 @@
+import {useHistory} from 'react-router-dom'
 import {DMProgressBar} from '../../../assets'
 import './index.css'
 
 function Schedule() {
+    const route = useHistory()
     return (
         <div className="schedule">
-            <h1 className="schedule__title">All schedule <span>For you</span></h1>
+            <h1 
+                className="schedule__title"
+                onClick={() => route.push('/my')}
+            >All schedule <span>For you</span></h1>
             <div className="schedule__user">
                 <div className="schedule__user-persection">
                     <div className="schedule__time">
