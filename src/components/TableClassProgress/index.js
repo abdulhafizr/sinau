@@ -1,4 +1,5 @@
-import {DMProgressBar, ICList} from '../../assets'
+import {CircularProgressbar} from 'react-circular-progressbar';
+import {ICList} from '../../assets'
 import './index.css'
 
 function TableClassProgress({onClick, data=[]}) {
@@ -28,11 +29,13 @@ function TableClassProgress({onClick, data=[]}) {
                                 <td>{data.name}</td>
                                 <td>{data.category}</td>
                                 <td>{data.description}</td>
-                                <td>
-                                    <img 
-                                        src={DMProgressBar} 
-                                        onClick={onClick}
-                                        alt="progress"
+                                <td 
+                                    onClick={onClick}
+                                >
+                                    <CircularProgressbar
+                                        styles={{height: 40, width: 40}}
+                                        value={data.score || 0}
+                                        text={`${data.score || 0}%`}
                                     />
                                 </td>
                                 <td>

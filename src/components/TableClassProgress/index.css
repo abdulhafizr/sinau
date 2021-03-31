@@ -60,6 +60,10 @@ input[name="table__class-progress-checked-body"] {
 .table__class-progress table td:last-child {
     border-radius: 0 5px 5px 0;
 }
+.table__class-progress table td .CircularProgressbar {
+    width: 40px;
+    height: 40px;
+}
 .table__class-progress table td.score {
     font-family: Montserrat;
     font-style: normal;
