@@ -1,8 +1,6 @@
 import {useState} from 'react';
 import {Link, useHistory, useRouteMatch, Switch, Route} from 'react-router-dom'
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
-import ClassDetail from '../ClassDetail'
-import MyClass from '../MyClass'
 import {TableClassProgress, TableNewClass, TopNavigation, Pagination} from '../../components'
 import {ICRightArrow, ICSearch, ICBottomArrow} from '../../assets'
 import './index.css'
@@ -197,16 +195,6 @@ function Activity() {
                         <Pagination />
                     </div>
                 </div>
-            </Route>
-            
-            {/* My Class */}
-            <Route path={`${path}/my-class`}>
-                <MyClass />
-            </Route>
-            
-            {/* Class Detail */}
-            <Route path={`${path}/class-detail`}>
-                <ClassDetail />
             </Route>
 
         </Switch>

@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Activity, Dashboard, ForYou, Profile } from "./pages";
+import { Activity, ClassDetail, Dashboard, ForYou, MyClass, Profile } from "./pages";
 import { Row, Col } from "reactstrap";
 import { Sidebar } from "./components";
 
@@ -27,15 +27,23 @@ function App() {
 						</Route>
 
 						{/* Activity */}
-						<Route path="/activity">
+						<Route exact path="/activity">
 							<Activity />
+						</Route>
+
+						{/* My Class */}
+						<Route path="/activity/my-class">
+							<MyClass />
+						</Route>
+					
+						{/* Class Detail */}
+						<Route path="/activity/class-detail">
+							<ClassDetail />
 						</Route>
 
 						{/* Other */}
 						<Route path="/help">Help</Route>
-						<Route path="/logout">
-							Logout
-						</Route>
+						<Route path="/logout">Logout</Route>
 					</Switch>
 				</Col>
 			</Row>

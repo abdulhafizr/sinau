@@ -2,7 +2,50 @@ import {ICAddMessage, ICRightArrow, DMUser1} from '../../assets'
 import {SearchMessage} from '../../components'
 import './index.css'
 
-function Messages({data = []}) {
+const users = [
+    {
+        foto:"profile 1",
+        name:"Deddy Cobuzier"
+    },
+    {
+        foto:"profile 2",
+        name:"Eden Hazard"
+    },
+    {
+        foto:"profile 3",
+        name:"Isyana Sarasvati"
+    },
+    {
+        foto:"profile 4",
+        name:"Nissa Sabyan"
+    },
+    {
+        foto:"profile 5",
+        name:"Peppy"
+    },
+    {
+        foto:"profile 6",
+        name:"Prilly Latuconsina"
+    },
+    {
+        foto:"profile 7",
+        name:"Prof. Winarto"
+    },
+    {
+        foto:"profile 8",
+        name:"Rio Dewanto"
+    },
+    {
+        foto:"profile 9",
+        name:"Tompi"
+    },
+    {
+        foto:"profile 10",
+        name:"Windy Larasati"
+    }
+]
+
+function Messages() {
     
     const toggleMessage = () => {
         const message = document.querySelector('.messages')
@@ -25,7 +68,7 @@ function Messages({data = []}) {
             
             <div className="messages__body">
                 {
-                    data.map((user, index) => (
+                    users.map((user, index) => (
                         <div className="message" key={index}>
                             <img src={DMUser1} alt="Profile" className="message__profile"/>
                             <div className="message__info">
