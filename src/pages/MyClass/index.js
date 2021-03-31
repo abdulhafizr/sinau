@@ -4,6 +4,89 @@ import {TopNavigation, TableClassProgress, Pagination} from '../../components'
 import {ICSearch} from '../../assets'
 import './index.css'
 
+const classProgress = [
+    {
+        name:"HTML Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:100
+    },
+    {
+        name:"CSS Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:42
+    },
+    {
+        name:"Javascript Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:21
+    },
+    {
+        name:"Responsive Layout",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:98
+    },
+    {
+        name:"Mid-term Exam",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:86
+    },
+    {
+        name:"Bootstrap4 Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:72
+    },
+    {
+        name:"Sass Essential Training",
+        schedule:"friday, 6 November 2020 08.00 - 09.40",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:null
+    },
+    {
+        name:"Learning React.js",
+        schedule:"friday, 13 November 2020 08.00 - 09.40",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:null
+    },
+    {
+        name:"UX for Web Design",
+        schedule:"friday, 20 November 2020 08.00 - 09.40",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:null
+    },
+    {
+        name:"Final-term Exam",
+        schedule:"friday, 27 November 2020 08.00 - 09.40",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:null
+    }
+]
+
 function MyClass() {
     
     const route = useHistory()
@@ -42,6 +125,7 @@ function MyClass() {
 
                     {/* Table Class Progress */}
                     <TableClassProgress 
+                        data={classProgress}
                         onClick={() => route.push(`${url}/class-progress`)}
                     />
                     

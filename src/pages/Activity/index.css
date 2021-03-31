@@ -98,6 +98,7 @@
 /* Options Search New Class Styles */
 .new__class-search-option {
     margin-top: -1px;
+    margin-bottom: 36px;
     padding: 1px 12px 0;
     height: 39px;
     background: #EEEEEE;
@@ -160,6 +161,10 @@ img.option__arrow {
         margin-bottom: 12px;
         font-size: 14px;
     }
+
+    /* .new__class .pagination {
+        margin-top: 40px;
+    } */
 
     /* Search New Class Styles */
     .new__class-search-input img {

@@ -6,6 +6,10 @@ div.for__you-main {
     margin-right: 32px;
 }
 
+.for__you .news {
+    margin-bottom: 33px;
+}
+
 div.for__you-message {
     max-width: 484px;
 }

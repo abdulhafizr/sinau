@@ -18,7 +18,7 @@ function Sidebar() {
 
     const route = useHistory()
     const {pathname} = useLocation()
-    
+
     return (
         <div className={`sidebar__wrapper ${pathname === '/profile' ? 'active' : ''}`}>
             {/* Icon Notification */}

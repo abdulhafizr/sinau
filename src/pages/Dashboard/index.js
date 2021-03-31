@@ -25,6 +25,48 @@ const allSchedule = [
         ]
     }
 ]
+const users = [
+    {
+        foto:"profile 1",
+        name:"Deddy Cobuzier"
+    },
+    {
+        foto:"profile 2",
+        name:"Eden Hazard"
+    },
+    {
+        foto:"profile 3",
+        name:"Isyana Sarasvati"
+    },
+    {
+        foto:"profile 4",
+        name:"Nissa Sabyan"
+    },
+    {
+        foto:"profile 5",
+        name:"Peppy"
+    },
+    {
+        foto:"profile 6",
+        name:"Prilly Latuconsina"
+    },
+    {
+        foto:"profile 7",
+        name:"Prof. Winarto"
+    },
+    {
+        foto:"profile 8",
+        name:"Rio Dewanto"
+    },
+    {
+        foto:"profile 9",
+        name:"Tompi"
+    },
+    {
+        foto:"profile 10",
+        name:"Windy Larasati"
+    }
+]
 
 function Dashboard() {
 
@@ -45,7 +87,9 @@ function Dashboard() {
                     </div>
                 </Col>
                 <Col className="dashboard__message">
-                    <Messages />
+                    <Messages 
+                        data={users}
+                    />
                 </Col>
             </Row>
         </div>

@@ -7,6 +7,93 @@ import {TableClassProgress, TableNewClass, TopNavigation, Pagination} from '../.
 import {ICRightArrow, ICSearch, ICBottomArrow} from '../../assets'
 import './index.css'
 
+const myClass = [
+    {
+        name:"HTML Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:100
+    },
+    {
+        name:"CSS Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:42
+    },
+    {
+        name:"Javascript Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:21
+    },
+    {
+        name:"Responsive Layout",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:98
+    },
+    {
+        name:"Mid-term Exam",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        status: "Ongoing",
+        score:86
+    }
+]
+
+const newClass = [
+    {
+        name:"HTML Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        pricing: "Free",
+        level: "Beginer"
+    },
+    {
+        name:"CSS Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        pricing: "Free",
+        level: "Beginer"
+    },
+    {
+        name:"Javascript Essential Training",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        pricing: "Free",
+        level: "Beginer"
+    },
+    {
+        name:"Responsive Layout",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        pricing: "Free",
+        level: "Beginer"
+    },
+    {
+        name:"Mid-term Exam",
+        schedule:"You have completed this topic",
+        category: "Software",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, consequatur!",
+        pricing: "Free",
+        level: "Beginer"
+    }
+]
+
+
 function Activity() {
 
     const route = useHistory()
@@ -20,6 +107,7 @@ function Activity() {
 
     return (
         <Switch>
+
             {/* Activity */}
             <Route exact path={path}>
                 <div className="activity">
@@ -29,8 +117,9 @@ function Activity() {
                     <h1 className="activity__label">My class</h1>
                     
                     <div className="my_class">
-                        <TableClassProgress 
-                            onClick={() => route.push(`${url}/class-progress`)}
+                        <TableClassProgress
+                            data={myClass}
+                            onClick={() => route.push(`${url}/my-class/class-progress`)}
                         />
 
                         <Link to={`${url}/my-class`} className="my_class--view-all">
@@ -99,6 +188,7 @@ function Activity() {
 
                         {/* Tables New Class Section */}
                         <TableNewClass 
+                            data={newClass}
                             onClick={() => route.push(`${url}/class-detail`)}
                         />
 
@@ -117,6 +207,7 @@ function Activity() {
             <Route path={`${path}/class-detail`}>
                 <ClassDetail />
             </Route>
+
         </Switch>
     )
 }

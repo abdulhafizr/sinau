@@ -1,7 +1,7 @@
 import {ICList} from '../../assets'
 import './index.css'
 
-function TableNewClass({onClick}) {
+function TableNewClass({onClick, data=[]}) {
     
     return (
         <div className="table__new-class">
@@ -16,22 +16,26 @@ function TableNewClass({onClick}) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="shadow-sm">
-                        <td>Know more Javascript</td>
-                        <td>Software</td>
-                        <td>Javascript from the basic for...</td>
-                        <td>Beginner</td>
-                        <td>Free</td>
-                        <td>
-                            <span 
-                                className="btn-register" 
-                                onClick={onClick}
-                            >Register</span>
-                        </td>
-                        <td>
-                            <img src={ICList} alt="list"/>
-                        </td>
-                    </tr>
+                    {
+                        data.map((data, index) => (
+                            <tr className="shadow-sm" key={index}>
+                                <td>{data.name}</td>
+                                <td>{data.category}</td>
+                                <td>{data.description}</td>
+                                <td>{data.level}</td>
+                                <td>{data.pricing || "Free"}</td>
+                                <td>
+                                    <span 
+                                        className="btn-register" 
+                                        onClick={onClick}
+                                    >Register</span>
+                                </td>
+                                <td>
+                                    <img src={ICList} alt="list"/>
+                                </td>
+                            </tr>
+                        ))
+                    }
                 </tbody>
             </table>
         </div>

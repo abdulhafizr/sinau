@@ -15,6 +15,10 @@
 .class__progress-percentage {
     height: 112px;
     padding-left: 272px;
+    padding-left: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .class__progress-percentage p {
     margin-bottom: 2px;

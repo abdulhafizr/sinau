@@ -1,7 +1,7 @@
 import {DMProgressBar, ICList} from '../../assets'
 import './index.css'
 
-function TableClassProgress({onClick}) {
+function TableClassProgress({onClick, data=[]}) {
     return (
         <div className="table__class-progress">
             <table>
@@ -20,15 +20,14 @@ function TableClassProgress({onClick}) {
                 </thead>
                 <tbody>
                     {
-                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                        .map((data, index) => (
+                        data.map((data, index) => (
                             <tr key={index}>
                                 <td>
                                     <input type="checkbox" name="table__class-progress-checked-body" id="table__class-progress-checked-body"/>
                                 </td>
-                                <td>Front-end fundamentals</td>
-                                <td>Software</td>
-                                <td>Learn the fundamentals of front end...</td>
+                                <td>{data.name}</td>
+                                <td>{data.category}</td>
+                                <td>{data.description}</td>
                                 <td>
                                     <img 
                                         src={DMProgressBar} 
@@ -37,9 +36,9 @@ function TableClassProgress({onClick}) {
                                     />
                                 </td>
                                 <td>
-                                    <span className="btn-ongoing">Ongoing</span>
+                                    <span className="btn-ongoing">{data.status}</span>
                                 </td>
-                                <td className="score">86</td>
+                                <td className="score">{data.score || 0}</td>
                                 <td>
                                     <img src={ICList} alt="option"/>
                                 </td>
