@@ -108,26 +108,18 @@
 }
 
 /* Button Options Styles */
-.btn-option {
-    background: none!important;
-    border: none!important;
-    font-family: Roboto!important;
-    font-style: normal!important;
-    font-weight: normal!important;
-    font-size: 12px!important;
-    line-height: 14px!important;
-    letter-spacing: 0.05em!important;
-    color: #000000!important;
-}
-.btn-option:hover {
-    background: #5784BA!important;
-    color: #EEEEEE!important;
-}
-.btn-option::after {
-    display: none!important;
-}
-img.option__arrow {
-    margin-left: 9.5px;
+button#category,
+button#level,
+button#pricing {
+    background: none;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 @media (max-width: 1199.98px) {
@@ -161,10 +153,6 @@ img.option__arrow {
         margin-bottom: 12px;
         font-size: 14px;
     }
-
-    /* .new__class .pagination {
-        margin-top: 40px;
-    } */
 
     /* Search New Class Styles */
     .new__class-search-input img {

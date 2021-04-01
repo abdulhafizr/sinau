@@ -1,8 +1,7 @@
-import {useState} from 'react';
 import {Link, useHistory, useRouteMatch} from 'react-router-dom'
-import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import {Dropdown} from 'react-bootstrap'
 import {TableClassProgress, TableNewClass, TopNavigation, Pagination} from '../../components'
-import {ICRightArrow, ICSearch, ICBottomArrow} from '../../assets'
+import {ICRightArrow, ICSearch} from '../../assets'
 import './index.css'
 
 const myClass = [
@@ -97,12 +96,6 @@ function Activity() {
     const route = useHistory()
     let {url} = useRouteMatch();
 
-    const [dropdownCategory, setDropdownCategory] = useState(false)
-    const [dropdownLevel, setDropdownLevel] = useState(false)
-    const [dropdownPricing, setDropdownPricing] = useState(false)
-    
-    const toggleOptionSearchNewClass = (toggler) => toggler(prevState => !prevState);
-
     return (
         <div className="activity">
             <TopNavigation label="Activity" type="text-only" />
@@ -139,42 +132,42 @@ function Activity() {
                     {/* Search New Class Options */}
                     <div className="new__class-search-option">
                         {/* Category Button Option */}
-                        <Dropdown isOpen={dropdownCategory} toggle={() => toggleOptionSearchNewClass(setDropdownCategory)}>
-                            <DropdownToggle className="btn-option" caret>
-                                Categories
-                                <img src={ICBottomArrow} className="option__arrow" alt=">"/>
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>Category 1</DropdownItem>
-                                <DropdownItem>Category 2</DropdownItem>
-                                <DropdownItem>Category 3</DropdownItem>
-                            </DropdownMenu>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" size="sm" id="category">
+                                Category
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
                         </Dropdown>
 
                         {/* Level Button Option */}
-                        <Dropdown isOpen={dropdownLevel} toggle={() => toggleOptionSearchNewClass(setDropdownLevel)}>
-                            <DropdownToggle className="btn-option" caret>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" size="sm" id="level">
                                 Level
-                                <img src={ICBottomArrow} className="option__arrow" alt=">"/>
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>Level 1</DropdownItem>
-                                <DropdownItem>Level 2</DropdownItem>
-                                <DropdownItem>Level 3</DropdownItem>
-                            </DropdownMenu>
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
                         </Dropdown>
                         
                         {/* Pricing Button Option */}
-                        <Dropdown isOpen={dropdownPricing} toggle={() => toggleOptionSearchNewClass(setDropdownPricing)}>
-                            <DropdownToggle className="btn-option" caret>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" size="sm" id="pricing">
                                 Pricing
-                                <img src={ICBottomArrow} className="option__arrow" alt=">"/>
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>Pricing 1</DropdownItem>
-                                <DropdownItem>Pricing 2</DropdownItem>
-                                <DropdownItem>Pricing 3</DropdownItem>
-                            </DropdownMenu>
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
                         </Dropdown>
                     </div>
 

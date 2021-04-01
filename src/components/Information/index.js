@@ -1,6 +1,6 @@
 import './index.css'
 
-function ClassInformation() {
+function Information() {
     return (
         <div className="class__information">
             <h1 className="class__information-title">Description</h1>
@@ -21,4 +21,4 @@ function ClassInformation() {
     )
 }
 
-export default ClassInformation
+export default Information

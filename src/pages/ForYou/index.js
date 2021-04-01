@@ -1,5 +1,5 @@
 import {useHistory} from 'react-router-dom'
-import {Row, Col} from 'reactstrap'
+import {Row, Col} from 'react-bootstrap'
 import {Calendar, Schedule, Messages, News} from '../../components'
 import './index.css'
 

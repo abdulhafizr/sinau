@@ -1,6 +1,6 @@
 import './index.css'
 
-function ClassProgressUser({data=[]}) {
+function Progress({data=[]}) {
     return (
         <div className="class__progress-user">
             <table className="class__progress-user-table">
@@ -23,4 +23,4 @@ function ClassProgressUser({data=[]}) {
     )
 }
 
-export default ClassProgressUser
+export default Progress

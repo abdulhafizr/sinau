@@ -1,6 +1,6 @@
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import {Activity, ClassDetail, Dashboard, ForYou, MyClass, Profile} from "./pages";
-import {Row, Col} from "reactstrap";
+import {Row, Col} from "react-bootstrap";
 import {Sidebar} from "./components";
 
 function App() {

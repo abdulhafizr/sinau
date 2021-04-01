@@ -1,4 +1,4 @@
-import {ClassDetailHeader, ClassInformation, TopNavigation} from '../../components'
+import {ClassDetailHeader, Information, TopNavigation} from '../../components'
 import {useHistory} from 'react-router-dom'
 import './index.css'
 
@@ -16,7 +16,7 @@ function ClassDetail() {
                         <p>Class Discussion</p>
                     </div>
                     
-                    <ClassInformation />
+                    <Information />
                 </div>
             </div>
         </div>

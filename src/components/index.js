@@ -9,10 +9,9 @@ import TableClassProgress from './TableClassProgress'
 import TableNewClass from './TableNewClass'
 import TopNavigation from './TopNavigation'
 
-
-import ClassDiscussion from './ClassDiscussion'
-import ClassInformation from './ClassInformation'
-import ClassProgressUser from './ClassProgressUser'
+import Discussion from './Discussion'
+import Information from './Information'
+import Progress from './Progress'
 import SearchMessage from './SearchMessage'
 import Pagination from './Pagination'
 
@@ -24,9 +23,9 @@ export {
     Messages, 
     News, 
     Schedule,
-    ClassDiscussion,
-    ClassInformation,
-    ClassProgressUser,
+    Discussion,
+    Information,
+    Progress,
     TableClassProgress, 
     TableNewClass, 
     TopNavigation, 
