@@ -13,7 +13,7 @@
     padding: 0 80px 37px 80px;
 }
 .class__progress-percentage {
-    height: 112px;
+    height: 90px;
     padding-left: 272px;
     padding-left: 272px;
     display: flex;
@@ -42,32 +42,30 @@
     border-radius: 10px;
 }
 
-.class__progress-information-header {
-    display: flex;
-    align-items: center;
-    position: relative;
+.class__progress-body .nav-tabs {
+    margin-top: 30px;
     border-bottom: 0.7px solid #000000;
 }
-
-.class__progress-information-header a {
-    padding-bottom: 6px;
+.class__progress-body .nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-right: 62px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-right: 62px;
-    margin-bottom: -2px;
-}
-.class__progress-information-header a:hover {
-    text-decoration: none;
 }
 
-.class__progress-information-header a.active {
+.class__progress-body .nav-tabs .nav-link.active {
     color: #5784BA;
     position: relative;
     border-bottom: 3px solid #5784BA;
+    margin-bottom: -2px;
 }
 
 
@@ -130,7 +128,7 @@
     .class__progress-information-header {
         margin-top: 20px;
     }
-    .class__progress-information-header a {
+    .class__progress-body .nav-tabs .nav-link {
         font-size: 12px;
         line-height: 14px;
         margin-right: 20px;

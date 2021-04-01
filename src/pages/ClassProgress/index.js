@@ -64,7 +64,9 @@ function ClassProgress() {
         <div className="class__progress">
             <TopNavigation label="Know more Javascript" onClick={route.goBack} />
             <div className="class__progress-body">
+                
                 <ClassDetailHeader />
+                
                 <div className="class__progress-information">
                     <div className="class__progress-percentage">
                         <p>80% to complete</p>
