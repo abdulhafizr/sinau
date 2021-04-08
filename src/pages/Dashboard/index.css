@@ -38,6 +38,9 @@ div.dashboard__message {
         margin-right: 0;
         margin-bottom: 33px;
     }
+    .dashboard-row {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 991.98px) {
