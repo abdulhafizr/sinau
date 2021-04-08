@@ -27,6 +27,16 @@ div.for__you-message {
     }
 }
 
+@media (max-width: 1024.320px) {
+    div.for__you-main {
+        margin-right: 0;
+        margin-bottom: 33px;
+    }
+    .for__you-row {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 991.98px) {
     .row.for__you-row {
         flex-direction: column;
