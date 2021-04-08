@@ -116,6 +116,19 @@
         top: 30px;
         right: 18px;
     }
+    .sidebar__icon-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 14px;
+        bottom: 14px;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background: #5784BA;
+        border-radius: 50%;
+        z-index: 100;
+    }
     .sidebar__user-info {
         padding: 100px 0 50px;
         display: flex;
@@ -170,16 +183,7 @@
         border-radius: 50%;
     }
     .sidebar__icon-message {
-        right: 14px;
         bottom: 144px;
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        background: #5784BA;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
     }
     .sidebar__main-item {
         height: 100%;

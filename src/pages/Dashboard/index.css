@@ -33,6 +33,13 @@ div.dashboard__message {
     }
 }
 
+@media (max-width: 1024.320px) {
+    div.dashboard__main {
+        margin-right: 0;
+        margin-bottom: 33px;
+    }
+}
+
 @media (max-width: 991.98px) {
     .row.dashboard-row {
         flex-direction: column;
